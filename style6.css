@@ -5,25 +5,26 @@
     align-items: center;
     padding-left: 1rem;
     align-self: center;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     /* border: 1px solid #384353; */
   }
   .decor-first {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:center;
+    align-items: center;
     width: 33%;
   }
   .decor-second {
-    width: fit-content;
+    /* width: fit-content; */
     justify-content: center;
     align-items: center;
     width: 33%;
   }
   .decor-third {
-    width: fit-content;
-    justify-content: flex-end;
-    align-items: flex-end;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
     width: 33%;
   }
   .decor-item {
@@ -55,13 +56,16 @@
     height: 90%;
   }
   
-      @media (max-width: 500px) {
+      @media (max-width: 800px) {
    .article-decor {
         width: 100%;
         margin-top: 1rem;
         align-content: center;
         padding-left: 1rem;
-  
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+  height: 100%;
       }
   
       .decor-pictureone {
@@ -99,12 +103,12 @@
       }
   
       .decor-head {
-        font-size: 2rem;
+        font-size: 3rem;
         padding-bottom: 2rem;
       }
   
       .decor-botton {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-bottom: 2rem;
         cursor: pointer;
       }
@@ -124,9 +128,9 @@
     background-size: cover;
     background-position: center;
     min-width: 90%;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 20%;
     margin: 3rem solid #f3f3f3;
   }
   .outer-image {
@@ -140,23 +144,25 @@
   }
   ::placeholder {
     font-size: 1.4rem;
-    color: #929090;
+    color: #cabcbc;
+  
   }
   #email {
-    min-width: 20%;
-    height: 3rem;
+    min-width: 30%;
+    /* height: 3rem; */
     background-color: transparent;
     font-weight: 100;
     border: 1px solid #6e6767;
     /* text-align: center; */
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding-left: 1.5rem;
     margin-top: 8%;
-    padding: 1rem;
+    padding: 2rem;
   }
   #text-para {
     width: 70%;
     text-align: center;
+    /* margin-top: 60%; */
     padding-left: 30%;
   }
   .common-input {
@@ -180,7 +186,7 @@
   
     #email {
       margin-top: 15%;
-      min-width: 20%;
+      min-width: 50%;
     }
   
   
@@ -192,6 +198,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     color: #f3f3f3;
     height: 100%;
     width: 100%;
@@ -243,7 +250,7 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .name-input {
     font-size: 300px;
@@ -262,10 +269,10 @@
     width: 100%;
     text-align: center;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     .input-award {
-      grid-template-columns: repeat(2, 1fr);
-   font-size: 1rem;
+    flex-wrap: wrap;
+    width: 50%;
     }
   
     .name-input {

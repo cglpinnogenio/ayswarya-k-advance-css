@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-height: 100%;
+    height: 100%;
     /* border-left: 1px solid #dacdcd;
     padding-left: 6%; */
     /* border-left: 1px solid grey; */
@@ -31,11 +31,12 @@
     flex-wrap: wrap;
     border-top: 1px solid #e1e3e8;
     padding-top: 2rem;
-    border-left: 1px solid #e1e3e8;
-    /* height: 100vh; */
+    /* border-left: 1px solid #e1e3e8; */
+    height: 100vh;
     /* padding-top: 1rem; */
     gap: 30px;
     width: 100%;
+    height: 100%;
   }
   
   .text-imagepic {
@@ -61,7 +62,7 @@
     align-items: center;
     /* gap: 10px; */
     max-width: 65%;
-    height: 100vh;
+    /* height: 100vh; */
 
   }
   .subdivisionright {
@@ -97,12 +98,14 @@
   }
   .bottom-picture {
     position: relative;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    margin-top: 1rem;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background-image: url("/assets/Images/picture/pic6.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   #imagesix {
     max-width: 100%;
@@ -149,6 +152,7 @@
     .container-chairimage {
       display: flex;
       flex-direction: column;
+      height: 100vh;
     }
 
     .text-imagepic {
@@ -157,7 +161,7 @@
 
     .input-colum {
       flex-direction: column;
-      height: 35vh;
+      height: 50vh;
     }
 
     .left-picture {
@@ -165,7 +169,8 @@
       align-items: center;
       /* gap: 10px; */
       max-width: fit-content;
-      height: 100vh;
+      /* height: 25vh; */
+
     }
 
     #imageeight {
@@ -177,16 +182,17 @@
       display: flex;
       flex-direction: row;
       width: 100%;
-      height: 50vh;
+      /* height: 50vh; */
+      /* height: 10vh; */
     }
 
     .image-division {
-      min-width: 100%;
+    width: fit-content;
 
     }
 
     .image-subdivision {
-      min-width: 100%;
+      width: fit-content;
     }
 
 
@@ -205,17 +211,13 @@
     .bottom-picture {
 background-position: center;
       width: 100%;
-      height:80vh;
+      height:40vh;
     }
 
 
     .ab-picture {
       display: none;
     }
-
-
-
-
 }
 
 
@@ -241,9 +243,8 @@ background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1500px;
     border-left: 1px solid #dacdcd;
-    padding: 3rem;
+    /* padding: 3rem; */
   }
   .side-view {
     font-size: 2rem;
@@ -284,7 +285,7 @@ background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center; */
-    height: 100vh;
+    height: 100%;
     margin: 2rem 0 2rem 2rem;
     height: 80vh;
     /* margin: 2rem 0 2rem 2rem; */
@@ -317,113 +318,4 @@ background-position: center;
   @media (max-width: 800px) {
     .seemore {
            display: none;}}
-  .article-decor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1rem;
-    align-self: center;
-    width: 100%;
-    min-height: 100vh;
-    /* border: 1px solid #384353; */
-  }
-  .decor-first {
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 33%;
-  }
-  .decor-second {
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-  }
-  .decor-third {
-    width: fit-content;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 33%;
-  }
-  .decor-item {
-    max-width: 80%;
-  }
-  .decor-head {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-  }
-  .decor-para {
-    font-size: 1rem;
-    padding-bottom: 2rem;
-  }
-  .decor-botton {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-    cursor: pointer;
-  }
-  #decor-pictureone {
-    width: 90%;
-    height: 90%;
-  }
-  #decor-picturetwo {
-    width: 90%;
-    height: 90%;
-  }
-  #decor-picturethree {
-    width: 90%;
-    height: 90%;
-  }
-  @media (max-width: 800px) {
-    .article-decor {
-         min-width: 100%;
-         margin-top: 1rem;
-         align-content: center;
-         padding-left: 1rem;
-       height: 100vh;
-   
-       }
-   
-       .decor-pictureone {
-         min-width: 100%;
-       }
-   
-       .decor-first {
-         width: 100%;
-         align-content: center;
-       }
-   
-       .decor-second {
-         width: 100%;
-         align-content: center;
-       }
-   
-       .decor-third {
-         width: 100%;
-         align-content: center;
-       }
-   
-       #decor-pictureone {
-         width: 90%;
-         height: 90%;
-       }
-   
-       #decor-picturetwo {
-         width: 90%;
-         height: 90%;
-       }
-   
-       #decor-picturethree {
-         width: 90%;
-         height: 90%;
-       }
-   
-       .decor-head {
-         font-size: 2rem;
-         padding-bottom: 2rem;
-       }
-   
-       .decor-botton {
-         font-size: 1.5rem;
-         padding-bottom: 2rem;
-         cursor: pointer;
-       }
-     }
+ 
