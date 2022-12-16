@@ -201,16 +201,14 @@ em {
 
 }
 
-/* @media (min-width: 1000px) {
+@media (min-width: 1000px) {
   .living-image {
     background-size: cover;
     background-position: center;
   }
 
 
-  .living-paragraph {
-    width: 60%;
-  }
+
 
 }
 
@@ -222,9 +220,7 @@ em {
 
 
 
-  .living-paragraph {
-    width: 60%;
-  }
+
 }
 
 @media (min-width: 1500px) {
@@ -235,7 +231,5 @@ em {
 
 
 
-  .living-paragraph {
-    width: 60%;
-  }
-} */
+ 
+}
