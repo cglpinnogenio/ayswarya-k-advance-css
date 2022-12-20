@@ -126,12 +126,7 @@
     }
   
   .outer {
-    /* padding: 2rem;
-    height: 100vh;
-    max-width: 1500px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+
   
     background-image: url(/assets/Images/sofadown.svg);
     border: 1px solid transparent;
@@ -142,11 +137,11 @@
     height: 50vh;
     text-align: center;
     padding-top: 10%;
-    margin: 3rem solid #f3f3f3;
+    /* margin: 3rem solid #f3f3f3; */
   }
   .outer-image {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem 2rem 0 2rem;
   }
   label {
     font-size: 4rem;
@@ -217,10 +212,7 @@
       
           }
   @media (max-width: 800px) {
-    label {
-      font-size: 2.5rem;
-      min-width: 100%;
-    }
+  
   
     .outer {
    
