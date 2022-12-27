@@ -322,7 +322,7 @@
   transform: rotatez(270deg);
   max-width: 5%;
   color: #000;
-  height: 35%;
+  /* height: 35%; */
   padding: 1rem;
   align-self: flex-end;
   margin-bottom: 3rem;
@@ -338,7 +338,7 @@
   max-width: 35%;
   padding: 1rem;
   border-left: 1px solid #dacdcd;
-  height: 100vh;
+  height: 100%;
 }
 
 .header-sofa {
