@@ -94,7 +94,7 @@
   
   .lookbook-image {
     border: 1px solid rgb(206, 199, 199);
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
     background-color: rgb(214, 207, 207);
     padding-bottom: 20%;
     margin: 1rem;
@@ -283,23 +283,24 @@
     flex-wrap: wraps;
   } */
   .name-pro {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #f3f3f3;
-  
+    padding-right: 3rem;
   }
   
   .price-pro {
-    font-size: 1rem;
+    font-size: 1.6rem;
     /* font-weight: 500; */
     color: #f3f3f3;
-    /* padding-right: 30%; */
+    padding-left: 3rem;
   }
   
-  .price-info {
+  .price-info{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    /* align-items: center; */
+    text-align: start;
   }
   
   /* .menu-product {
@@ -315,23 +316,27 @@
     max-width: 85%;
     max-height: 90%;
   }
-  
+  #shop{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .decor-shop {
-    font-size: 1.6rem;
     border-top: 1px solid #dacdcd;
     border-bottom: 1px solid #dacdcd;
     padding: 3rem 0;
-    margin-bottom: 2rem;
-    width: 100%;
-    text-align: center;
     background-color: #384353;
     color: #f3f3f3;
-    font-size: 2rem;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
   }
   
-  .content-shopall {
+  /* .content-shopall {
     max-width: 100%;
-  }
+    margin-bottom: 2rem;
+  } */
   @media (max-width: 320px) {
     .fifth-container {
         grid-template-columns: repeat(2, 1fr);
