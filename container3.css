@@ -31,7 +31,7 @@
   flex-basis: 50%;
   height: 100vh;
   /* width: 50%; */
-  background-image: url("/assets/Images/Rectangle 556.svg");
+  background-image: url("/assets/Images/Rectangle 556.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -41,7 +41,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  padding:0 15%;
+  padding: 0 15%;
 }
 
 #container-bigpic {
@@ -51,7 +51,7 @@ min-height: 100vh; */
 }
 
 .header-container {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 5%;
 
   padding-bottom: 5%;
@@ -59,8 +59,8 @@ min-height: 100vh; */
 
 .paragraph-container {
   font-size: 2rem;
-text-align: start;
-padding-right:2rem ;
+  text-align: start;
+  padding-right: 2rem;
 }
 
 .view-container {
@@ -78,6 +78,8 @@ padding-right:2rem ;
     color: #f3f3f3;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container-right {
@@ -103,30 +105,21 @@ padding-right:2rem ;
   }
 
   .header-contain {
-    font-size: 2rem;
+    font-size: 1.6rem;
 
   }
 
   .paragraph-container {
     font-size: 10px;
-    padding: 2rem 1rem;
-    text-align: center;
+    padding: 2rem 0;
     /* transform: translateY(-80%); */
   }
 
   .view-container {
     padding: 10px 0;
     font-size: 1rem;
-
-    /* align-items: center; */
-    /* transform: translateY(-10%); */
   }
 
-  .images-container {
-    background-size: cover;
-    background-position: center;
-
-  }
 
   #container-bigpic {
     min-width: 100%;
@@ -136,24 +129,29 @@ padding-right:2rem ;
 
 }
 
+@media (min-width: 500px) {
+  .header-contain {
+    font-size: 1.6rem;
 
+  }
+}
 
 .product-sname {
   font-size: 1.4rem;
   font-weight: 400;
   color: #000;
-  padding-right: 3rem;
+  /* padding-right: 3rem; */
 }
 
 .product-sprice {
   font-size: 1.4rem;
   font-weight: 500;
   color: #000;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
 }
 
 .images-container {
-  min-height: 1000px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,6 +161,7 @@ padding-right:2rem ;
   background-size: cover;
   width: 100%;
   position: relative;
+  background-position: center;
 }
 
 #image-container {
@@ -171,20 +170,20 @@ padding-right:2rem ;
 
 .image-right {
   position: absolute;
-  bottom: 14%;
+  bottom: 16%;
   right: 5%;
   border: 1px solid #f3f3f3;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: #f3f3f3;
 }
 
 .image-left-small {
   position: absolute;
-  top: 12%;
-  left: 7%;
+  top: 15%;
+  left: 9%;
   border: 1px solid #f3f3f3;
   background-color: #f3f3f3;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 #subimage {
@@ -194,11 +193,7 @@ padding-right:2rem ;
 
 @media (max-width: 800px) {
 
-
-
-
   .images-container {
-    max-height: 50vh;
     background-position: center;
 
   }

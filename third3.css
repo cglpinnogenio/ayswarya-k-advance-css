@@ -8,8 +8,7 @@
     padding: 2rem;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
-    font-size: 3rem;
-
+    font-size: 3.5rem;
     border-top: 1px solid rgb(206, 199, 199);
 }
 
@@ -29,7 +28,7 @@
 }
 
 .product-input {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     display: flex;
     justify-content: center;
     align-items: center;

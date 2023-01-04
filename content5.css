@@ -6,11 +6,7 @@
   height: 100%;
   border-left: 1px solid #e1e3e8;
   margin-left: 6.4%;
-  /* border-left: 1px solid #dacdcd;
-    padding-left: 6%; */
-  /* border-left: 1px solid grey; */
-  /* padding-left: 1rem;
-    border-left: 1px solid #e1e3e8; */
+
 }
 
 .heading-input {
@@ -19,7 +15,7 @@
 }
 
 .subtitle-content {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 4rem 0;
 }
 
@@ -30,58 +26,6 @@
   text-align: center;
 }
 
-/* .container-chairimage{display: grid; 
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  
-  gap: 30px;
-}
-.text-imagepic{grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 2;}
-.left-picture{grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3;}
-  .image-division{ grid-row-start: 1;
-    grid-column-start: 3;
- 
-    grid-row-end: 2;
-    grid-column-end: 4;}
-.image-subdivision{grid-row-start: 2;
-  grid-column-start: 3;
-  grid-row-end: 3;
-  grid-column-end: 4;}
-  
-  .bottom-picture{
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 4;} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-chairimage {
   display: flex;
   justify-content: space-around;
@@ -90,7 +34,7 @@
   border-top: 1px solid #e1e3e8;
   /* padding-top: 2rem; */
   /* border-left: 1px solid #e1e3e8; */
-  height: 120vh;
+  height: 70vh;
   width: 100%;
   grid-template-rows: repeat(2, 1fr);
   /* gap: 10px; */
@@ -115,7 +59,7 @@
   grid-template-columns: repeat(3, 1fr);
   border-left: 1px solid #e1e3e8;
   /* height: 100%; */
- 
+
 }
 
 .left-picture {
@@ -135,7 +79,7 @@
   align-items: flex-start;
   gap: 20px;
   border-left: 1px solid #e1e3e8;
- padding-left: 15px;
+  padding-left: 15px;
 }
 
 .image-division {
@@ -143,10 +87,10 @@
   align-items: flex-start;
 }
 
-.image-subdivision {
+/* .image-subdivision {
   justify-content: flex-start;
   align-items: flex-start;
-}
+} */
 
 #imagefour {
   width: 100%;
@@ -180,13 +124,19 @@
 
 .ab-picture {
   position: absolute;
-  left: 30%;
+  left: 31%;
   top: 60px;
 }
 
 #ab-pic {
   width: 50%;
   height: 70%;
+}
+@media (max-width: 1300px) {
+  
+  .bottom-picture {height: 50vh;}
+
+  .container-chairimage {height: 50vh;}
 }
 
 @media (max-width: 500px) {
@@ -205,29 +155,33 @@
 
   .content-container {
     flex-direction: column;
+    border-left: none;
+    margin-left: none;
   }
 
   .heading-input {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .subtitle-content {
     font-size: 2rem;
     text-align: center;
   }
 
+  .subtitle-content {
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
   .subtitle-paragraph {
-    font-size: 1.6rem;
+    font-size: 8px;
     text-align: center;
     width: 60%;
+    margin: none;
   }
 
   .container-chairimage {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     display: grid;
 
   }
@@ -293,7 +247,7 @@
 
 .enjoy-input {
   padding: 4rem;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -308,7 +262,7 @@
 
 .sofa-content {
   /* border-left: 1px solid #dacdcd; */
-  height: 60vh;
+  height: 100vh;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
@@ -322,11 +276,11 @@
   transform: rotatez(270deg);
   max-width: 13%;
   color: #000;
-  height: 27%;
+  /* height: 27%; */
   padding: 1rem;
   align-self: flex-end;
   margin-bottom: 3rem;
-  width: 100%;
+  /* width: 100%; */
   /* border-bottom: 1px solid #000; */
 }
 
@@ -343,7 +297,7 @@
 
 .header-sofa {
   font-size: 5rem;
-  margin-bottom: 3rem;
+  margin: 15% 0;
 }
 
 .paragraph-sofa {
@@ -354,7 +308,7 @@
   font-size: 1.6rem;
   cursor: pointer;
   margin-top: 3rem;
-  cursor: pointer;
+
 }
 
 .image-sofa {
@@ -363,8 +317,7 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-left: 2rem ; */
-  height: 50vh;
+  height: 90vh;
 }
 
 @media (max-width: 320px) {
@@ -383,9 +336,23 @@
   .sofa-content {
     display: none;
   }
+
+  .enjoy-input {
+    font-size: 2rem;
+    padding: 1.5rem
+  }
+
+  ;
 }
 
+@media (max-width: 1000px) {
+  
+  .header-sofa {font-size: 3rem;}
 
+  
+
+  
+}
 /* #sofa-side {
     height: 100%;
     width: 100%;

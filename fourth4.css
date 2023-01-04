@@ -221,7 +221,7 @@
     .middle-paragraph {
         font-size: 1.4rem;
         margin: 0 2rem;
-        padding: 2rem;
+        padding: 5px;
     }
   
     .after-container {
@@ -231,13 +231,18 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-  
     .material-col {
         flex-direction: column-reverse;
         font-size: 10px;
         width: 100%;
     }
-  
+  .lookbook-material{
+    font-size: 1.6rem;
+  }
+  .lookbook-categories{
+    font-size: 1.6rem;
+  }
+  .lookbook-produced{font-size: 1.6rem;}
     .item-header {
         display: none;
     }
@@ -261,7 +266,11 @@
         font-size: 3rem;
     }
   }
-  
+  @media (max-width: 500px) { .middle-paragraph {
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding: 2rem;
+}}
   .fifth-container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -283,20 +292,20 @@
     flex-wrap: wraps;
   } */
   .name-pro {
-    font-size: 1.6rem;
     font-weight: 400;
     color: #f3f3f3;
     padding-right: 3rem;
   }
   
   .price-pro {
-    font-size: 1.6rem;
+  
     /* font-weight: 500; */
     color: #f3f3f3;
     padding-left: 3rem;
   }
   
   .price-info{
+    font-size: 1.6rem;
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
@@ -339,9 +348,11 @@
   } */
   @media (max-width: 320px) {
     .fifth-container {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
         padding-top: 1rem;
+    }
+    .image-look {
+      max-width: 84%;
+      max-height: 82%;
     }}
   
     @media (max-width: 500px) {
@@ -360,10 +371,20 @@
   
     .price-info {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        font-size: 1rem;
     }
-  
+    .name-pro {
+      padding-right: 1px;
+    }
+    
+    .price-pro {
+    
+      /* font-weight: 500; */
+      padding-left: 1px;
+    }
     
   }
   @media (max-width: 1000px) {
